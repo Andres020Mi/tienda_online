@@ -1,0 +1,80 @@
+.container-20-80{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    gap: 10px;
+    margin: auto;
+    margin-top: 80px;
+    width: 100%;
+    overflow: hidden;
+
+    .category{
+        
+        height: 100dvh;
+        display: flex;
+        text-align: center;
+        overflow: scroll;
+        scrollbar-width: none;
+        flex-direction: column;
+        background-color: orangered;
+        align-content: center;
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+            width: 100%;
+            padding: 20px 0px ;
+            transition: all 0.5s;
+        }
+        a:hover{
+            background-color: white;
+            color: orangered;
+            border: orangered 2px solid;
+            padding: 40px 0px;
+        }
+    }
+
+    /* Productos */
+    .products-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 10px 20px;
+        overflow: scroll;
+        scrollbar-width: none;
+        height: 100dvh;
+
+        .card-product{
+            border: 1px solid orangered;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 5px;
+            background-color: rgba(255, 140, 0, 0.463);
+            transition: all 1s;
+            h2{
+                font-size: 20px;
+                color: orangered;
+                font-weight: bolder;
+            }
+            a{
+                font-size: 20px;
+                background-color: orangered;
+                color: white;
+                font-weight: bolder;
+                border-radius: 10px;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin: auto;
+               
+            }
+
+            
+        }
+
+        .card-product:hover{
+            transform: rotateX(40deg) rotateY(20deg)  scale(1.1);
+        }
+    }
+}
