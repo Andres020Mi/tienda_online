@@ -11,9 +11,9 @@ $cnx->query("CREATE TABLE IF NOT EXISTS buyers (
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, 
     name VARCHAR(250) NOT NULL, 
     email VARCHAR(250) NOT NULL, 
-    phone INT(20) NOT NULL, 
+    phone VARCHAR(20) NOT NULL, 
     password VARCHAR(250) NOT NULL, 
-    age INT NOT NULL, 
+    age INT(3) NOT NULL, 
     money INT NOT NULL 
 )"); 
 
@@ -22,9 +22,9 @@ $cnx->query("CREATE TABLE IF NOT EXISTS sellers (
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, 
     name VARCHAR(250) NOT NULL, 
     email VARCHAR(250) NOT NULL, 
-    phone INT(20) NOT NULL, 
+    phone VARCHAR(20) NOT NULL, 
     password VARCHAR(250) NOT NULL, 
-    age INT NOT NULL, 
+    age INT(3) NOT NULL, 
     money INT NOT NULL 
 )"); 
 

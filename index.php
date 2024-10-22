@@ -1,5 +1,7 @@
 <?php  
 
+session_start();
+
 // Configuracion de la base de datos
 require_once("config_db.php");
 

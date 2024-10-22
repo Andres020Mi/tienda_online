@@ -13,8 +13,10 @@ if($url == null){
     
 }
 
+// array con las posibles rutas que se aceptan para dirigir a diferentes vistas
 $url_validas = [
     "inicio",
+    "login",
     "error404"
 ];
 
